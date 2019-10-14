@@ -3,6 +3,7 @@ package hw_3.task_6;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// форматируй код
 public class Task6 {
     public static void main (String [] args) {
      /*Есть массив чисел. Необходимо создать другой массив содержащий только четные элементы из первого*/
@@ -15,6 +16,7 @@ public class Task6 {
         for(int i=0; i< array.length; i ++)
         {
             System.out.println("Enter array elements: ");
+            // Scanner inArray = new Scanner(System.in); один раз за пределами цикла
             Scanner inArray = new Scanner(System.in);
             array[i] = inArray.nextInt();
             if (array[i]%2 ==0)
