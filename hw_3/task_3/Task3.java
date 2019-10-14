@@ -15,6 +15,7 @@ public class Task3 {
        for (int i =0; i< array.length; i++)
        {
            System.out.println("Enter array element: ");
+          // Scanner inArray = new Scanner(System.in); один раз за пределами цикла
            Scanner inArray = new Scanner(System.in);
            array[i] = inArray.nextInt();
            if (array[i]%2!=0)//проверка если остаток от деления не равен 0
