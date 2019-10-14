@@ -2,6 +2,8 @@ package hw_3.task_2;
 
 import java.util.Scanner;
 
+// форматируй код
+// старайся не оставлять комментари, хороших названий переменных должно быть достаточно
 public class Task2 {
     public static void main(String[] args)
     {
@@ -15,6 +17,7 @@ public class Task2 {
         for (int i=0; i< array.length; i++)
         {
             System.out.println("Enter array element: ");//введите элемент массива
+            // нет необходимости создавать Scanner каждый раз в цикле, вынеси за пределы и вызывай метод nextInt()
             Scanner inArray = new Scanner(System.in);//получаем Input Stream
             array[i]= inArray.nextInt();//считываем примитивные типы данных (int)
             average +=array[i];//подсчет сумы элементов массива
