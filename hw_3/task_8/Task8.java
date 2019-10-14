@@ -2,6 +2,7 @@ package hw_3.task_8;
 
 import java.util.Scanner;
 
+// отличная бабочка
 public class Task8 {
     public static void main (String[] args) {
         int height;
@@ -12,6 +13,7 @@ public class Task8 {
         System.out.println("Enter weight: ");
         width = in.nextInt();
         int count;
+        // когда идет сложный код, лучше давать более понятные имена даже переменным из цикла
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
                 if (i >= height / 2) {
