@@ -2,6 +2,8 @@ package hw_3.task_5;
 
 import java.util.Arrays;
 
+// эту задачу можно решить через 1 массив (не создавая вспомогательный), пока решение не оптимально
+// посмотри решение Mary Stankevich, если не получится
 public class Task5 {
     public static void main (String [] args)
     {
