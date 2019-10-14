@@ -3,6 +3,8 @@ package hw_3.task_1;
 import java.util.Arrays;
 import java.util.Scanner;
 
+// форматируй код
+// старайся не оставлять комментарии
 public class Task1_max {
     public static void main (String [] args) {
             /*Создать массив из 3 элементов. При помощи класса сканер и пользователя заполнить его. Вывести сумму,
@@ -11,7 +13,7 @@ public class Task1_max {
         int sum=0; //Сумма
         for (int i=0; i< array.length; i++) {
             System.out.print("Введите элемент массива:");
-            Scanner in = new Scanner(System.in);
+            Scanner in = new Scanner(System.in); // эту строку за пределы цикла, не нужно каждый раз создавать сканнер, просто вызывай метод
             array[i] = in.nextInt();
             sum += array[i];//подсчет суммы элементов массива
         }
