@@ -5,12 +5,13 @@ import java.util.Objects;
 public class Student {
     private String name;
     private int age;
-    private static String text = "Hello from static";
+    private static String text = "Hello from static"; // static поля идут раньше других
 
-
+// пустая строка не нужна
     public Student() {
-        name = "Nick";
-        age = 21;
+        // this("Nick", 21);
+        name = "Nick"; // через вызов другого конструктора
+        age = 21; // через вызов другого конструктора
     }
 
     public Student(String name, int age) {
@@ -59,6 +60,7 @@ public class Student {
 
     public String getText() {return text;}
 
+    // this.text - это компилируется, но некорректно. text - static поле, соот-но Student.text=text;
     public void setText(String text){this.text=text;}
 
 }
