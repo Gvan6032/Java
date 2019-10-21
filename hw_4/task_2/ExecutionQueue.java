@@ -5,10 +5,10 @@ public class ExecutionQueue {
 
     static {
         msg = "static block";
-    }
+    } // здесь нужен абзац
     {
         msg = "regular init block";
-    }
+    } // здесь нужен абзац
     public ExecutionQueue ()
     {
         msg = "constructor value";

@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 import static java.lang.Math.*;
 
+// форматируй код
 public class Task3 {
     public static void main (String [] args)
     {
@@ -25,6 +26,6 @@ public class Task3 {
         }
 
         System.out.println("Number of coinsidences: " + count);
-
+// пустая строка не нужна
     }
 }
