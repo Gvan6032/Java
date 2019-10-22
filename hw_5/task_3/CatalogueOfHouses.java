@@ -1,8 +1,10 @@
 package hw_5.task_3;
 
 public class CatalogueOfHouses {
+    // private House[] houses;
     private String [] arrayHouse = new String [2];
 
+    // передавай массив аргументом конструктора
     public CatalogueOfHouses()
     {
         arrayHouse[0] = "Country house";
