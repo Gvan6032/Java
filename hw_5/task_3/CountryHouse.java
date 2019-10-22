@@ -33,4 +33,11 @@ public class CountryHouse implements InterfaceHouse{
         System.out.println("Turn on the heating !");
     }
 
+    /*
+    @Override
+    public String toString() {
+            System.out.println("Number of floors: " + this.numberOfFloors);
+            System.out.println("Number of tenants: " + this.numberOfTenants);
+    }
+    */
 }
