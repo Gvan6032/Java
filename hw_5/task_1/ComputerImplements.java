@@ -1,5 +1,6 @@
 package hw_5.task_1;
 
+// форматируй код
     public class ComputerImplements implements Computer {
 
         @Override
