@@ -1,11 +1,13 @@
 package hw_5.task_3;
 
+// форматируй код
 public class CountryHouse implements InterfaceHouse{
 
     int numberOfTenants;
     int numberOfFloors;
     String type;
 
+    // лучше конструктор с аргументами
     public CountryHouse ()
     {
         numberOfFloors = 2;
