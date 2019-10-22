@@ -9,8 +9,8 @@ public class CatalogueOfHouses {
     {
         arrayHouse[0] = "Country house";
         arrayHouse[1] = "High-rise building";
-    }
-    public void getArrayHouse() {
+    } // нужен абзац
+    public void getArrayHouse() { // метод getArray должен возвращать массив, а не печатать его, для печати хорошо использовать метод toString()
         for (int i=0; i< arrayHouse.length; i ++)
         {
             System.out.println("Type of houses: " + arrayHouse[i].toString());
