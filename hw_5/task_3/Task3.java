@@ -16,6 +16,7 @@ public class Task3 {
         type = in.next();
         if (type == "Country house")
         {
+            // System.out.println(countryHouse);
             System.out.println("Number of floors: " + countryHouse.numberOfFloors);
             System.out.println("Number of tenants: " + countryHouse.numberOfTenants);
             countryHouse.turnOnTheHeating();
