@@ -1,0 +1,16 @@
+package hw_6.task_3;
+
+public class TreeBanana {
+    private int branchQuantity;
+    private int branchBanana;
+
+    public TreeBanana() {
+        this.branchBanana = 10;//количество бананов на ветке
+        this.branchQuantity = 25;//количество веток
+    }
+
+    public void totalQuantityBanana() {
+        int total = branchBanana * branchQuantity;
+        System.out.println("Total quantity of bananas: " + total);
+    }
+}
