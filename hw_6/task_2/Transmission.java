@@ -9,6 +9,7 @@ public class Transmission {
     }
 
     public void shiftGearUp(int transmission) {
+        // 7 - в константу класса
         if (transmission <= 7) {
             transmission++;
             System.out.println("Gear was shifted up");
