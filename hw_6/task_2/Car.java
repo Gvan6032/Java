@@ -7,8 +7,11 @@ public class Car {
     private int gear;
 
     public Car() {
+        // при создании объекта класса Car boolean поле 'gaz' будет инициализировано в false, поэтому самому можно не присваивать
         this.gaz = false;
+       // при создании объекта класса Car int поле 'gear' будет инициализировано в 0, поэтому самому можно не присваивать
         this.gear = 0;
+        // motor & transmission лучше передавать аргументом в конструктор
         this.transmission = new Transmission(gear);
         this.motor = new Motor();
     }
@@ -20,7 +23,7 @@ public class Car {
     }
 
     public void pressTheGas(boolean gas) {
-        if (gas == false) {
+        if (gas == false) { // gas == false -> if(!gas)
             System.out.println("The gas was pressed");
             gas = true;
         } else {
