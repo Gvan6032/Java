@@ -1,5 +1,6 @@
 package hw_7.task_9;
 
+// +
 public class Task9 {
     public static void main(String[] args) {
         /*Есть массив строк, вывести на экран все строки, длина которых больше 5 символов*/
