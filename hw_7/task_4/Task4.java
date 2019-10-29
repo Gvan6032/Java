@@ -2,6 +2,8 @@ package hw_7.task_4;
 
 import java.util.Arrays;
 
+// форматируй код
+// необходимо было посчитать повторение каждого из слов по отдельности, а не всех вместе
 public class Task4 {
     public static void main (String [] args){
         boolean state;
@@ -21,18 +23,22 @@ public class Task4 {
         Arrays.toString(split);
         for (int i =0; i<split.length;i++) {
             state = Arrays.asList(split[i]).contains("alert");
+            // if (state)
             if (state == true) {
                 count++;
             }
             state = Arrays.asList(split[i]).contains("add");
+            // if (state)
             if (state == true) {
                 count++;
             }
             state = Arrays.asList(split[i]).contains("good");
+            // if (state)
             if (state == true) {
                 count++;
             }
             state = Arrays.asList(split[i]).contains("plan");
+            // if (state)
             if (state == true) {
                 count++;
             }
