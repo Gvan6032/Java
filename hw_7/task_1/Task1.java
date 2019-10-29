@@ -1,5 +1,6 @@
 package hw_7.task_1;
 
+// +
 public class Task1 {
     public static void main (String [] args){
         /*Игра в слова. Есть строка “engineering”. Нужно выделить подстроку так,
