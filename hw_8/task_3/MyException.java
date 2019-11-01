@@ -1,5 +1,6 @@
 package hw_8.task_3;
 
+// +
 public class MyException extends Exception {
     private int number;
 
