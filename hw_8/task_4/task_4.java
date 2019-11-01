@@ -1,5 +1,6 @@
 package hw_8.task_4;
 
+// Название класса с большой буквы
 public class task_4 {
     public static void main(String[] args) {
         /*Есть стиральная машина, которая работает от электричества, но у нее есть небольшой блок питания, мощности
@@ -14,5 +15,7 @@ public class task_4 {
             washer.draining();
             state = false;
         }
+        
+        // я бы в методе main обрабатывал исключение, которое может бросать метод startWaher() и в блоке finally вызывал слив воды
     }
 }
