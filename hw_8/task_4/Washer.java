@@ -9,7 +9,7 @@ public class Washer {
 
     public void draining() {
         powerSupply = true;
-        startWasher();
+        startWasher(); // зачем в сливе воды ты вызываешь метод "старт"?
         System.out.println("Water drain is working. The washing machine was turned on");
     }
 
@@ -23,6 +23,6 @@ public class Washer {
             }
         } catch (PowerSupplyException e) {
             e.printStackTrace();
-        }
+        } // где-то здесь должен быть блок finally, в котором вызывается метод "слив воды"
     }
 }
