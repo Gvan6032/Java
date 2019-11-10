@@ -4,11 +4,13 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
+// форматируй код
 public class Task3 {
     public static void main (String [] args){
+        // путь к файлу в константу
         try(FileInputStream fin = new FileInputStream("E://Java//Java_homework//Gvan6032//src//hw_9//task_2//note2.txt")){
             System.out.printf("File size: %d bytes",fin.available());
-            int i =-1;
+            int i =-1; // int i; 
             while((i=fin.read())!=-1){
                 System.out.printf(String.valueOf((char)i));
             }
