@@ -2,6 +2,7 @@ package hw_9.task_4;
 
 import java.io.Serializable;
 
+// +
 public class Employee extends Work implements Serializable {
     public String name;
     private int age;
