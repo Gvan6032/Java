@@ -1,5 +1,6 @@
 package hw_10.task_1;
 
+// +
 public class Generic<T> {
     private T id;
 
