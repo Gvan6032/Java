@@ -34,6 +34,22 @@ public class Task2 {
                     renameFileName(fileName);
                     break;
             }
+            /*
+            Strategy strategy;
+            switch (choice) {
+                case 1:
+                    strategy = Strategy.strategyFirst;
+                    break;
+                case 2:
+                    strategy = Strategy.StrategySecond;
+                    break;
+                case 3:
+                    strategy = Strategy.strategyThierd;
+                    break;
+            }
+            fileName = strategy.action(fileName);
+            renameFileName(fileName);
+            */
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -42,7 +58,7 @@ public class Task2 {
     public static String getFileName() {
         File[] filesList;
         String fileName = " ";
-        String filePath = "E:\\Java\\Java_homework\\Gvan6032\\src\\hw_10\\task_2\\";
+        String filePath = "E:\\Java\\Java_homework\\Gvan6032\\src\\hw_10\\task_2\\"; // передавай через аргументы метода и это очень похоже на константу
         File file = new File(filePath);//ñîçäàåì îáúåêò â ïàïêå (ôàéë)
         filesList = file.listFiles();//çàïèñûâàåì ôàéëû èç ïàïêè â ìàññèâ îáúåêòîâ òèïà File
         for (int i = 0; i < filesList.length; i++) {
@@ -55,9 +71,10 @@ public class Task2 {
     }
 
     public static void renameFileName(String fileName) {
-        File[] filesList;
-        String filePath = "E:\\Java\\Java_homework\\Gvan6032\\src\\hw_10\\task_2\\";
+        File[] filesList; // заводи переменную там, где ты ее используешь
+        String filePath = "E:\\Java\\Java_homework\\Gvan6032\\src\\hw_10\\task_2\\"; // передавай через аргументы метода
         File file = new File(filePath);//ñîçäàåì îáúåêò â ïàïêå (ôàéë)
+        // File[] filesList = filesList = file.listFiles();
         filesList = file.listFiles();//çàïèñûâàåì ôàéëû èç ïàïêè â ìàññèâ îáúåêòîâ òèïà File
         for (int i = 0; i < filesList.length; i++) {
             String buffer = filesList[i].getName();
