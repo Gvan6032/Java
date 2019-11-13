@@ -2,6 +2,7 @@ package hw_10.task_3;
 
 import java.util.Arrays;
 
+// +
 public class Garage<T> {
 
     private T car;
