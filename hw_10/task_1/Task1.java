@@ -2,12 +2,12 @@ package hw_10.task_1;
 
 public class Task1 {
     public static void main(String[] args) {
-     /*Создать обобщенный (generic) класс, который в конструкторе принимает аргумент неизвестного типа. Создайте
-     в классе метод, который бы выводил что это за тип на экран (получить имя класса для переменной getClass().getName())*/
+     /*Г‘Г®Г§Г¤Г ГІГј Г®ГЎГ®ГЎГ№ГҐГ­Г­Г»Г© (generic) ГЄГ«Г Г±Г±, ГЄГ®ГІГ®Г°Г»Г© Гў ГЄГ®Г­Г±ГІГ°ГіГЄГІГ®Г°ГҐ ГЇГ°ГЁГ­ГЁГ¬Г ГҐГІ Г Г°ГЈГіГ¬ГҐГ­ГІ Г­ГҐГЁГ§ГўГҐГ±ГІГ­Г®ГЈГ® ГІГЁГЇГ . Г‘Г®Г§Г¤Г Г©ГІГҐ
+     Гў ГЄГ«Г Г±Г±ГҐ Г¬ГҐГІГ®Г¤, ГЄГ®ГІГ®Г°Г»Г© ГЎГ» ГўГ»ГўГ®Г¤ГЁГ« Г·ГІГ® ГЅГІГ® Г§Г  ГІГЁГЇ Г­Г  ГЅГЄГ°Г Г­ (ГЇГ®Г«ГіГ·ГЁГІГј ГЁГ¬Гї ГЄГ«Г Г±Г±Г  Г¤Г«Гї ГЇГҐГ°ГҐГ¬ГҐГ­Г­Г®Г© getClass().getName())*/
         Generic<Integer> genericFirst = new Generic<Integer>();
         genericFirst.getClass(34);
 
-        Generic<String> genericSecond = new Generic<String>();
-        genericSecond.getClass("34");
+        Generic<String> genericSecond = new Generic<String>(); // Generic<String> genericSecond = new Generic<>();
+        genericSecond.getClass("34"); // РјРµС‚РѕРґ getClass() РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ Р±РµР· Р°СЂРіСѓРјРµРЅС‚РѕРІ
     }
 }

@@ -5,12 +5,12 @@ import java.util.Scanner;
 
 public class Task2 {
     public static void main(String[] args) {
-        /*Есть папка с файлами, которые нужно переименовать.
-Реализуйте паттерн "стратегия" при помощи Enum для переименования файлов:
-- имя файла маленькими буквами
-- первая бука в имени файла с большой буквы, а остальные маленькие
-- имя файла написано кэпс локом (все буквы большие)
-Напишите класс, у которого будет метод принимающий текущее имя файла и стратегию для переименования.*/
+        /*Г…Г±ГІГј ГЇГ ГЇГЄГ  Г± ГґГ Г©Г«Г Г¬ГЁ, ГЄГ®ГІГ®Г°Г»ГҐ Г­ГіГ¦Г­Г® ГЇГҐГ°ГҐГЁГ¬ГҐГ­Г®ГўГ ГІГј.
+ГђГҐГ Г«ГЁГ§ГіГ©ГІГҐ ГЇГ ГІГІГҐГ°Г­ "Г±ГІГ°Г ГІГҐГЈГЁГї" ГЇГ°ГЁ ГЇГ®Г¬Г®Г№ГЁ Enum Г¤Г«Гї ГЇГҐГ°ГҐГЁГ¬ГҐГ­Г®ГўГ Г­ГЁГї ГґГ Г©Г«Г®Гў:
+- ГЁГ¬Гї ГґГ Г©Г«Г  Г¬Г Г«ГҐГ­ГјГЄГЁГ¬ГЁ ГЎГіГЄГўГ Г¬ГЁ
+- ГЇГҐГ°ГўГ Гї ГЎГіГЄГ  Гў ГЁГ¬ГҐГ­ГЁ ГґГ Г©Г«Г  Г± ГЎГ®Г«ГјГёГ®Г© ГЎГіГЄГўГ», Г  Г®Г±ГІГ Г«ГјГ­Г»ГҐ Г¬Г Г«ГҐГ­ГјГЄГЁГҐ
+- ГЁГ¬Гї ГґГ Г©Г«Г  Г­Г ГЇГЁГ±Г Г­Г® ГЄГЅГЇГ± Г«Г®ГЄГ®Г¬ (ГўГ±ГҐ ГЎГіГЄГўГ» ГЎГ®Г«ГјГёГЁГҐ)
+ГЌГ ГЇГЁГёГЁГІГҐ ГЄГ«Г Г±Г±, Гі ГЄГ®ГІГ®Г°Г®ГЈГ® ГЎГіГ¤ГҐГІ Г¬ГҐГІГ®Г¤ ГЇГ°ГЁГ­ГЁГ¬Г ГѕГ№ГЁГ© ГІГҐГЄГіГ№ГҐГҐ ГЁГ¬Гї ГґГ Г©Г«Г  ГЁ Г±ГІГ°Г ГІГҐГЈГЁГѕ Г¤Г«Гї ГЇГҐГ°ГҐГЁГ¬ГҐГ­Г®ГўГ Г­ГЁГї.*/
         try {
             String fileName = getFileName();
             int choice = 0;
@@ -34,6 +34,22 @@ public class Task2 {
                     renameFileName(fileName);
                     break;
             }
+            /*
+            Strategy strategy;
+            switch (choice) {
+                case 1:
+                    strategy = Strategy.strategyFirst;
+                    break;
+                case 2:
+                    strategy = Strategy.StrategySecond;
+                    break;
+                case 3:
+                    strategy = Strategy.strategyThierd;
+                    break;
+            }
+            fileName = strategy.action(fileName);
+            renameFileName(fileName);
+            */
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -42,9 +58,9 @@ public class Task2 {
     public static String getFileName() {
         File[] filesList;
         String fileName = " ";
-        String filePath = "E:\\Java\\Java_homework\\Gvan6032\\src\\hw_10\\task_2\\";
-        File file = new File(filePath);//создаем объект в папке (файл)
-        filesList = file.listFiles();//записываем файлы из папки в массив объектов типа File
+        String filePath = "E:\\Java\\Java_homework\\Gvan6032\\src\\hw_10\\task_2\\"; // РїРµСЂРµРґР°РІР°Р№ С‡РµСЂРµР· Р°СЂРіСѓРјРµРЅС‚С‹ РјРµС‚РѕРґР° Рё СЌС‚Рѕ РѕС‡РµРЅСЊ РїРѕС…РѕР¶Рµ РЅР° РєРѕРЅСЃС‚Р°РЅС‚Сѓ
+        File file = new File(filePath);//Г±Г®Г§Г¤Г ГҐГ¬ Г®ГЎГєГҐГЄГІ Гў ГЇГ ГЇГЄГҐ (ГґГ Г©Г«)
+        filesList = file.listFiles();//Г§Г ГЇГЁГ±Г»ГўГ ГҐГ¬ ГґГ Г©Г«Г» ГЁГ§ ГЇГ ГЇГЄГЁ Гў Г¬Г Г±Г±ГЁГў Г®ГЎГєГҐГЄГІГ®Гў ГІГЁГЇГ  File
         for (int i = 0; i < filesList.length; i++) {
             String buffer = filesList[i].getName();
             if (buffer.endsWith(".txt")) {
@@ -55,10 +71,11 @@ public class Task2 {
     }
 
     public static void renameFileName(String fileName) {
-        File[] filesList;
-        String filePath = "E:\\Java\\Java_homework\\Gvan6032\\src\\hw_10\\task_2\\";
-        File file = new File(filePath);//создаем объект в папке (файл)
-        filesList = file.listFiles();//записываем файлы из папки в массив объектов типа File
+        File[] filesList; // Р·Р°РІРѕРґРё РїРµСЂРµРјРµРЅРЅСѓСЋ С‚Р°Рј, РіРґРµ С‚С‹ РµРµ РёСЃРїРѕР»СЊР·СѓРµС€СЊ
+        String filePath = "E:\\Java\\Java_homework\\Gvan6032\\src\\hw_10\\task_2\\"; // РїРµСЂРµРґР°РІР°Р№ С‡РµСЂРµР· Р°СЂРіСѓРјРµРЅС‚С‹ РјРµС‚РѕРґР°
+        File file = new File(filePath);//Г±Г®Г§Г¤Г ГҐГ¬ Г®ГЎГєГҐГЄГІ Гў ГЇГ ГЇГЄГҐ (ГґГ Г©Г«)
+        // File[] filesList = filesList = file.listFiles();
+        filesList = file.listFiles();//Г§Г ГЇГЁГ±Г»ГўГ ГҐГ¬ ГґГ Г©Г«Г» ГЁГ§ ГЇГ ГЇГЄГЁ Гў Г¬Г Г±Г±ГЁГў Г®ГЎГєГҐГЄГІГ®Гў ГІГЁГЇГ  File
         for (int i = 0; i < filesList.length; i++) {
             String buffer = filesList[i].getName();
             if (buffer.endsWith(".txt") || buffer.endsWith(".TXT")) {
@@ -67,7 +84,9 @@ public class Task2 {
         }
     }
 
+    // enum РІ РѕС‚РґРµР»СЊРЅС‹Р№ С„Р°Р№Р»
     enum Strategy {
+        // strategyFirst -> РїСЂРёРґСѓРјР°Р№ РЅР°Р·РІР°РЅРёРµ, РєРѕС‚РѕСЂРѕРµ РѕС‚СЂР°Р¶Р°РµС‚ СЃСѓС‚СЊ СЃС‚СЂР°С‚РµРіРёРё, РЅР°РїСЂРёРјРµСЂ LOWER_CASE_STRATEGY
         strategyFirst {
             public String action(String fileName) {
                 fileName = fileName.toLowerCase();
@@ -75,6 +94,7 @@ public class Task2 {
                 return fileName;
             }
         },
+        // StrategySecond -> РїРµСЂРµРёРјРµРЅСѓР№
         StrategySecond {
             public String action(String fileName) {
                 fileName = fileName.substring(0, 1).toUpperCase() + fileName.substring(1).toLowerCase();
@@ -82,6 +102,7 @@ public class Task2 {
                 return fileName;
             }
         },
+        // strategyThierd -> РїРµСЂРµРёРјРµРЅСѓР№
         strategyThierd {
             public String action(String fileName) {
                 fileName = fileName.toUpperCase();

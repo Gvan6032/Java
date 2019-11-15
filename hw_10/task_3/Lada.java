@@ -1,5 +1,6 @@
 package hw_10.task_3;
 
+// +
 public class Lada implements Auto {
     private String color;
     private String model;
