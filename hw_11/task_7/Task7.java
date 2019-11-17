@@ -4,9 +4,10 @@ import java.util.Collections;
 import java.util.Set;
 import java.util.TreeSet;
 
+// +
 public class Task7 {
     public static void main(String[] args) {
-        /*Есть TreeSet чисел, нужно отсортировать его в обратном порядке*/
+        /*Г…Г±ГІГј TreeSet Г·ГЁГ±ГҐГ«, Г­ГіГ¦Г­Г® Г®ГІГ±Г®Г°ГІГЁГ°Г®ГўГ ГІГј ГҐГЈГ® Гў Г®ГЎГ°Г ГІГ­Г®Г¬ ГЇГ®Г°ГїГ¤ГЄГҐ*/
         TreeSet<Integer> treeSet = new TreeSet<>();
         for (int i = 1; i < treeSet.size(); i++) {
             treeSet.add((int) (Math.random() * treeSet.size()));
