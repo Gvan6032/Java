@@ -3,9 +3,10 @@ package hw_11.task_4;
 import java.util.LinkedList;
 import java.util.List;
 
+// +
 public class Task4 {
     public static void main(String[] args) {
-        /*Есть две коллекции, нужно оставить в первой только те, которые есть во второй*/
+        /*Г…Г±ГІГј Г¤ГўГҐ ГЄГ®Г«Г«ГҐГЄГ¶ГЁГЁ, Г­ГіГ¦Г­Г® Г®Г±ГІГ ГўГЁГІГј Гў ГЇГҐГ°ГўГ®Г© ГІГ®Г«ГјГЄГ® ГІГҐ, ГЄГ®ГІГ®Г°Г»ГҐ ГҐГ±ГІГј ГўГ® ГўГІГ®Г°Г®Г©*/
         try {
             List<String> elements = new LinkedList<>();
             elements.add("Hurts");
@@ -13,11 +14,14 @@ public class Task4 {
             elements.add("Blink182");
             elements.add("Bob Marley");
             System.out.println(elements);
+            
             List<String> elementsEquals = new LinkedList<>();
             elementsEquals.add("Hurts");
             elementsEquals.add("Blink182");
             System.out.println(elementsEquals);
+            
             elements.retainAll(elementsEquals);
+            
             System.out.println(elements);
         } catch (Exception e) {
             e.printStackTrace();
