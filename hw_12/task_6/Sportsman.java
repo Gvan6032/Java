@@ -2,6 +2,7 @@ package hw_12.task_6;
 
 import java.util.Objects;
 
+// +
 public class Sportsman implements Comparable<Sportsman> {
     private double speed;
     private String name;
