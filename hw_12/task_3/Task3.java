@@ -2,9 +2,10 @@ package hw_12.task_3;
 
 import java.util.function.BinaryOperator;
 
+// +
 public class Task3 {
     public static void main(String[] args) {
-        /*Используя интерфейс BinaryOperator написать лямбда-выражение, которое бы умножало одно целое число на другое*/
+        /*Г€Г±ГЇГ®Г«ГјГ§ГіГї ГЁГ­ГІГҐГ°ГґГҐГ©Г± BinaryOperator Г­Г ГЇГЁГ±Г ГІГј Г«ГїГ¬ГЎГ¤Г -ГўГ»Г°Г Г¦ГҐГ­ГЁГҐ, ГЄГ®ГІГ®Г°Г®ГҐ ГЎГ» ГіГ¬Г­Г®Г¦Г Г«Г® Г®Г¤Г­Г® Г¶ГҐГ«Г®ГҐ Г·ГЁГ±Г«Г® Г­Г  Г¤Г°ГіГЈГ®ГҐ*/
         try {
             BinaryOperator<Integer> multiply = (x, y) -> x * y;
             System.out.println(multiply.apply(2, 5));
