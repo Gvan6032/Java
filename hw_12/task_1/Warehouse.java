@@ -2,6 +2,7 @@ package hw_12.task_1;
 
 import java.util.Objects;
 
+// +
 public class Warehouse {
     private String productName;
 
