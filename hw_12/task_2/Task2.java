@@ -1,8 +1,11 @@
 package hw_12.task_2;
 
+
 public class Task2 {
     public static void main(String[] args) {
-        /*Написать функцию перевода числа в строку с добавлением денежной единицы. Например, 5 -> 5 рублей.*/
+        /*ГЌГ ГЇГЁГ±Г ГІГј ГґГіГ­ГЄГ¶ГЁГѕ ГЇГҐГ°ГҐГўГ®Г¤Г  Г·ГЁГ±Г«Г  Гў Г±ГІГ°Г®ГЄГі Г± Г¤Г®ГЎГ ГўГ«ГҐГ­ГЁГҐГ¬ Г¤ГҐГ­ГҐГ¦Г­Г®Г© ГҐГ¤ГЁГ­ГЁГ¶Г». ГЌГ ГЇГ°ГЁГ¬ГҐГ°, 5 -> 5 Г°ГіГЎГ«ГҐГ©.*/
+        
+        // РЅРµ РґСѓРјР°СЋ С‡С‚Рѕ Р·РґРµСЃСЊ С‚РµР±Рµ РЅСѓР¶РµРЅ try-catch
         try {
             Function<Integer, String> convert = number -> String.valueOf(number) + " rubles";
             System.out.println(convert.apply(10));
