@@ -2,6 +2,7 @@ package hw_12.task_4;
 
 import java.util.Objects;
 
+// +
 public class User {
     private String name;
 

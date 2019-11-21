@@ -6,9 +6,10 @@ import java.util.function.Predicate;
 
 public class Task5 {
     public static void main(String[] args) {
-        /*Создать метод, который бы принимал на вход List<User> и предикат, по которому все юзеры,
-        у которых имена начинаются с A,P,E удалялись бы из этого листа
+        /*Г‘Г®Г§Г¤Г ГІГј Г¬ГҐГІГ®Г¤, ГЄГ®ГІГ®Г°Г»Г© ГЎГ» ГЇГ°ГЁГ­ГЁГ¬Г Г« Г­Г  ГўГµГ®Г¤ List<User> ГЁ ГЇГ°ГҐГ¤ГЁГЄГ ГІ, ГЇГ® ГЄГ®ГІГ®Г°Г®Г¬Гі ГўГ±ГҐ ГѕГ§ГҐГ°Г»,
+        Гі ГЄГ®ГІГ®Г°Г»Гµ ГЁГ¬ГҐГ­Г  Г­Г Г·ГЁГ­Г ГѕГІГ±Гї Г± A,P,E ГіГ¤Г Г«ГїГ«ГЁГ±Гј ГЎГ» ГЁГ§ ГЅГІГ®ГЈГ® Г«ГЁГ±ГІГ 
         */
+        // РЅРµ СЃС‚РѕРёС‚ РёСЃРїРѕР»СЊР·Р»РѕРІР°С‚СЊ try-catch РіРґРµ СЌС‚Рѕ РЅРµРЅСѓР¶РЅРѕ
         try {
             List<hw_12.task_5.User> userList = new LinkedList<>();
             userList.add(new User("Nick"));
@@ -18,6 +19,8 @@ public class Task5 {
             userList.add(new User("Eugen"));
             System.out.println(userList);
             Predicate<String> userPredicate = name -> name.startsWith("A") || name.startsWith("P") || name.startsWith("E");
+            
+            // РґР»СЏ С„РёР»СЊС‚СЂР°С†РёРё СЌР»РµРјРµРЅС‚РѕРІ РёСЃРїРѕР»СЊР·СѓР№ РёС‚РµСЂР°С‚РѕСЂ
             for (int i = 0; i < userList.size(); i++) {
                 boolean state = userPredicate.test(userList.get(i).getName());
                 System.out.println(state);

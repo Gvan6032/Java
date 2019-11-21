@@ -6,10 +6,11 @@ import java.util.List;
 
 public class Task1 {
     public static void main(String[] args) {
-        /*Есть товар, который поступает на склад магазина(пускай это будет коллекция).
-        Вам необходимо указать дату и время, в которое товар поступил (например при добавлении
-        его в коллекцию, т.е. склад)*/
+        /*Д№Е„Е€Гј Е€Г®ГўЕ•Д‘, Д™Г®Е€Г®Д‘Е±Г© ДЏГ®Е„Е€ГіДЏЕ•ДєЕ€ Г­Е• Е„Д™Г«Е•Г¤ Д›Е•ДѓЕ•Г§ДЌГ­Е•(ДЏГіЕ„Д™Е•Г© ГЅЕ€Г® ГЎГіГ¤ДєЕ€ Д™Г®Г«Г«ДєД™Г¶ДЌЛ™).
+        Г‚Е•Д› Г­ДєГ®ГЎЕ‘Г®Г¤ДЌД›Г® ГіД™Е•Г§Е•Е€Гј Г¤Е•Е€Гі ДЌ ГўД‘ДєД›Л™, Гў Д™Г®Е€Г®Д‘Г®Дє Е€Г®ГўЕ•Д‘ ДЏГ®Е„Е€ГіДЏДЌГ« (Г­Е•ДЏД‘ДЌД›ДєД‘ ДЏД‘ДЌ Г¤Г®ГЎЕ•ГўГ«ДєГ­ДЌДЌ
+        ДєДѓГ® Гў Д™Г®Г«Г«ДєД™Г¶ДЌЕЈ, Е€.Дє. Е„Д™Г«Е•Г¤)*/
         try {
+            // Сѓ Warehouse СЃС‚РѕРёР»Рѕ СЃРґРµР»Р°С‚СЊ РїРѕР»Рµ timeAdded Рё СЃРµС‚Р°С‚СЊ РµРіРѕ РїРµСЂРµРґ РґРѕР±Р°РІР»РµРЅРёРµРј РІ С…СЂР°РЅРёР»РёС‰Рµ
             List<Warehouse> productWarehouse = new LinkedList<>();
             productWarehouse.add(new Warehouse("Apple"));
             productWarehouse.add(new Warehouse("Orange"));
@@ -19,6 +20,7 @@ public class Task1 {
         }
     }
 
+    // List<Warehouse> productWarehouse Р·Р°С‡РµРј С‚РµР±Рµ СЌС‚РѕС‚ Р°СЂРіСѓРјРµРЅС‚ РІ РјРµС‚РѕРґРµ, РµСЃР»Рё С‚С‹ РµРіРѕ РЅРµ РёСЃРїРѕР»СЊР·СѓРµС€СЊ?
     public static void timeProduct(List<Warehouse> productWarehouse) {
         LocalDateTime dateTime = LocalDateTime.now();
         System.out.println(dateTime);

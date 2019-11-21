@@ -6,9 +6,9 @@ import java.util.List;
 
 public class Task7 {
     public static void main(String[] args) {
-        /*При помощи лямбда выражения, написать свой компаратор, который бы сортировал лист строк в обратном порядке*/
+        /*ГЏГ°ГЁ ГЇГ®Г¬Г®Г№ГЁ Г«ГїГ¬ГЎГ¤Г  ГўГ»Г°Г Г¦ГҐГ­ГЁГї, Г­Г ГЇГЁГ±Г ГІГј Г±ГўГ®Г© ГЄГ®Г¬ГЇГ Г°Г ГІГ®Г°, ГЄГ®ГІГ®Г°Г»Г© ГЎГ» Г±Г®Г°ГІГЁГ°Г®ГўГ Г« Г«ГЁГ±ГІ Г±ГІГ°Г®ГЄ Гў Г®ГЎГ°Г ГІГ­Г®Г¬ ГЇГ®Г°ГїГ¤ГЄГҐ*/
         try {
-            Comparator<String> comparator = (String lineFirst, String lineSecond) -> -lineFirst.compareTo(lineSecond);
+            Comparator<String> comparator = (String lineFirst, String lineSecond) -> -lineFirst.compareTo(lineSecond);// -first.compareTo(second) -> -1 * first.compareTo(second) С‚Р°Рє Р»СѓС‡С€Рµ
             List<String> line = new ArrayList<>();
             line.add("Sun");
             line.add("is");
