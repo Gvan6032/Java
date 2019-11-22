@@ -2,6 +2,7 @@ package hw_13.task_6;
 
 import java.util.Objects;
 
+// +
 public class Phone {
     private String model;
 
