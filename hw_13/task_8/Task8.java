@@ -5,9 +5,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+// +
 public class Task8 {
     public static void main(String[] args) {
-        /*Есть коллекция телефонов, нужно сгруппировать по компании и вывести на экран*/
+        /*Г…Г±ГІГј ГЄГ®Г«Г«ГҐГЄГ¶ГЁГї ГІГҐГ«ГҐГґГ®Г­Г®Гў, Г­ГіГ¦Г­Г® Г±ГЈГ°ГіГЇГЇГЁГ°Г®ГўГ ГІГј ГЇГ® ГЄГ®Г¬ГЇГ Г­ГЁГЁ ГЁ ГўГ»ГўГҐГ±ГІГЁ Г­Г  ГЅГЄГ°Г Г­*/
         List<Phone> phone = new ArrayList<>();
         phone.add(new Phone("Apple"));
         phone.add(new Phone("Samsung"));
@@ -15,8 +16,10 @@ public class Task8 {
         phone.add(new Phone("Apple"));
         phone.add(new Phone("ZTE"));
         phone.add(new Phone("Samsung"));
+        
         Map<String, List<Phone>> phoneStream = phone.stream()
                 .collect(Collectors.groupingBy(Phone::getManufacturer));
+        
         System.out.println(phoneStream);
     }
 }
