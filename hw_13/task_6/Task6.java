@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// +
 public class Task6 {
     public static void main(String[] args) {
         /*Task 6 (distinct)
-        Есть коллекция телефонов, нужно убрать все повторяющиеся*/
+        Г…Г±ГІГј ГЄГ®Г«Г«ГҐГЄГ¶ГЁГї ГІГҐГ«ГҐГґГ®Г­Г®Гў, Г­ГіГ¦Г­Г® ГіГЎГ°Г ГІГј ГўГ±ГҐ ГЇГ®ГўГІГ®Г°ГїГѕГ№ГЁГҐГ±Гї*/
         List<Phone> phone = new ArrayList<>();
         phone.add(new Phone("ZTE-654"));
         phone.add(new Phone("Apple SX 11 Pro"));
