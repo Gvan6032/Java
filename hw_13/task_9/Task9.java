@@ -5,10 +5,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+// Р° СЌС‚Рѕ С‚РѕС‡РЅРѕ С‚Р°СЃРє 9?
 public class Task9 {
     public static void main(String[] args) {
-        /*Есть коллекция телефонов. Нужно разделить на две части,
-        в одной только айфоны, в другой остальные производители.
+        /*Г…Г±ГІГј ГЄГ®Г«Г«ГҐГЄГ¶ГЁГї ГІГҐГ«ГҐГґГ®Г­Г®Гў. ГЌГіГ¦Г­Г® Г°Г Г§Г¤ГҐГ«ГЁГІГј Г­Г  Г¤ГўГҐ Г·Г Г±ГІГЁ,
+        Гў Г®Г¤Г­Г®Г© ГІГ®Г«ГјГЄГ® Г Г©ГґГ®Г­Г», Гў Г¤Г°ГіГЈГ®Г© Г®Г±ГІГ Г«ГјГ­Г»ГҐ ГЇГ°Г®ГЁГ§ГўГ®Г¤ГЁГІГҐГ«ГЁ.
         */
         List<Phone> phone = new ArrayList<>();
         phone.add(new Phone("Apple", 2019));
@@ -17,8 +18,10 @@ public class Task9 {
         phone.add(new Phone("Samsung", 2000));
         phone.add(new Phone("ZTE", 2018));
         phone.add(new Phone("Huawei", 2015));
+        
         Map<String, List<Phone>> phoneStream = phone.stream()
                 .collect(Collectors.groupingBy(Phone::getManufacturer, Collectors.toList()));
+       
         System.out.println(phoneStream);
     }
 }
