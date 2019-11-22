@@ -4,9 +4,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+// +
 public class Task1 {
     public static void main(String[] args) {
-        /*Есть коллекция строк, нужно убрать все элементы, длина которых меньше 5 символов*/
+        /*Г…Г±ГІГј ГЄГ®Г«Г«ГҐГЄГ¶ГЁГї Г±ГІГ°Г®ГЄ, Г­ГіГ¦Г­Г® ГіГЎГ°Г ГІГј ГўГ±ГҐ ГЅГ«ГҐГ¬ГҐГ­ГІГ», Г¤Г«ГЁГ­Г  ГЄГ®ГІГ®Г°Г»Гµ Г¬ГҐГ­ГјГёГҐ 5 Г±ГЁГ¬ГўГ®Г«Г®Гў*/
         List<String> line = new ArrayList<>();
         line.add("Blue");
         line.add("Red ball");
