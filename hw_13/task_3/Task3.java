@@ -6,8 +6,8 @@ import java.util.stream.Collectors;
 
 public class Task3 {
     public static void main(String[] args) {
-        /*Есть коллекция телефонов. Необходимо получить из нее коллекцию производителей (производитель - это строка)
-        и оставить только те, которые входят в список:
+        /*Г…Г±ГІГј ГЄГ®Г«Г«ГҐГЄГ¶ГЁГї ГІГҐГ«ГҐГґГ®Г­Г®Гў. ГЌГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® ГЇГ®Г«ГіГ·ГЁГІГј ГЁГ§ Г­ГҐГҐ ГЄГ®Г«Г«ГҐГЄГ¶ГЁГѕ ГЇГ°Г®ГЁГ§ГўГ®Г¤ГЁГІГҐГ«ГҐГ© (ГЇГ°Г®ГЁГ§ГўГ®Г¤ГЁГІГҐГ«Гј - ГЅГІГ® Г±ГІГ°Г®ГЄГ )
+        ГЁ Г®Г±ГІГ ГўГЁГІГј ГІГ®Г«ГјГЄГ® ГІГҐ, ГЄГ®ГІГ®Г°Г»ГҐ ГўГµГ®Г¤ГїГІ Гў Г±ГЇГЁГ±Г®ГЄ:
         Apple, Samsung, Xiaomi*/
         List<Phone> phone = new ArrayList<>();
         phone.add(new Phone("Apple"));
@@ -18,6 +18,7 @@ public class Task3 {
         System.out.println(phone);
         List<String> phonePhone = phone.stream()
                 .map(Phone::getManufacturer)
+                     // Р»СѓС‡С€Рµ СЃРґРµР»Р°С‚СЊ РєРѕР»Р»РµРєС†РёСЋ РёР· СЌС‚РёС… СЃР»РѕРІ Рё РІС‹Р·С‹РІР°С‚СЊ Сѓ СЌС‚РѕР№ РєРѕР»Р»РµРєС†РёРё contains()
                 .filter(phoneString -> phoneString.contains("Apple") || phoneString.contains("Samsung") || phoneString.contains("Xiaomi"))
                 .collect(Collectors.toList());
         System.out.println(phonePhone);
