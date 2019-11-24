@@ -5,14 +5,13 @@ import java.util.*;
 public class Task2 {
     public static void main(String[] args) {
         /*(max, String::compareTo / Comparator.naturalOrder())
-         Г…Г±ГІГј ГЄГ®Г«Г«ГҐГЄГ¶ГЁГї Г±ГІГ°Г®ГЄ, Г­ГіГ¦Г­Г® Г­Г Г©ГІГЁ Г±ГІГ°Г®ГЄГі Г± Г¬Г ГЄГ±ГЁГ¬Г Г«ГјГ­Г®Г© Г¤Г«ГЁГ­Г­Г®Г©.*/
+         Есть коллекция строк, нужно найти строку с максимальной длинной.*/
         List<String> line = new ArrayList<>();
         line.addAll(Arrays.asList(new String[]{"I", "Run", "Faster"}));
         System.out.println(line);
         String max = line.stream()
                 .max(String::compareTo).get();
 
-        // Сѓ С‚РµР±СЏ РєРѕРјРїР°СЂР°С‚РѕСЂ РїРѕ Р°Р»С„Р°РІРёС‚Р° СЃСЂР°РІРЅРёРІР°РµС‚, Р° РЅРµ РїРѕ РґР»РёРЅРµ
         Optional<String> maxNew = line.stream().max(Comparator.naturalOrder());
         System.out.println(maxNew);
         maxNew.ifPresentOrElse(
