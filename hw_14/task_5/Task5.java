@@ -5,26 +5,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Task5 {
-    /*Создать лист элементов (типа Cat). Заполнить лист элементами и null,
-    сериализовать лист в файл и десериализовать из файла. проверить наличие null элементов*/
+    /*Г‘Г®Г§Г¤Г ГІГј Г«ГЁГ±ГІ ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў (ГІГЁГЇГ  Cat). Г‡Г ГЇГ®Г«Г­ГЁГІГј Г«ГЁГ±ГІ ГЅГ«ГҐГ¬ГҐГ­ГІГ Г¬ГЁ ГЁ null,
+    Г±ГҐГ°ГЁГ Г«ГЁГ§Г®ГўГ ГІГј Г«ГЁГ±ГІ Гў ГґГ Г©Г« ГЁ Г¤ГҐГ±ГҐГ°ГЁГ Г«ГЁГ§Г®ГўГ ГІГј ГЁГ§ ГґГ Г©Г«Г . ГЇГ°Г®ГўГҐГ°ГЁГІГј Г­Г Г«ГЁГ·ГЁГҐ null ГЅГ«ГҐГ¬ГҐГ­ГІГ®Гў*/
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         String path = "E://Java//Java_homework//Gvan6032//src//hw_14//task_5//Cat.txt";
         List<Cat> cats = new ArrayList<>();
         cats.add(new Cat("Tommy"));
         cats.add(new Cat("Donny"));
         cats.add(new Cat("Sam"));
+//        cats.add(null); - РІ СЌС‚РѕРј СЃСѓС‚СЊ Р·Р°РґР°РЅРёСЏ
         serializableObject(path, cats);
         deserializableObject(path);
     }
 
     public static void serializableObject(String path, List<Cat> cats) throws IOException {
-        FileOutputStream fos = new FileOutputStream(path);//для записи данных в файл
-        ObjectOutputStream oos = new ObjectOutputStream(fos);//преобразует объекты в байты
+        FileOutputStream fos = new FileOutputStream(path);//Г¤Г«Гї Г§Г ГЇГЁГ±ГЁ Г¤Г Г­Г­Г»Гµ Гў ГґГ Г©Г«
+        ObjectOutputStream oos = new ObjectOutputStream(fos);//ГЇГ°ГҐГ®ГЎГ°Г Г§ГіГҐГІ Г®ГЎГєГҐГЄГІГ» Гў ГЎГ Г©ГІГ»
 
-        oos.writeObject(cats);//сохраняем объекты в файл
-        oos.close();//закрываем поток  и освобождаем ресурсы
+        oos.writeObject(cats);//Г±Г®ГµГ°Г Г­ГїГҐГ¬ Г®ГЎГєГҐГЄГІГ» Гў ГґГ Г©Г«
+        oos.close();//Г§Г ГЄГ°Г»ГўГ ГҐГ¬ ГЇГ®ГІГ®ГЄ  ГЁ Г®Г±ГўГ®ГЎГ®Г¦Г¤Г ГҐГ¬ Г°ГҐГ±ГіГ°Г±Г»
     }
 
+    // <cats> - СЌС‚Рѕ Р·Р°С‡РµРј?
     public static <cats> void deserializableObject(String path) throws IOException, ClassNotFoundException {
         FileInputStream fis = new FileInputStream(path);
         ObjectInputStream ois = new ObjectInputStream(fis);
