@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Task3 {
     public static void main(String[] args) {
-        /*���� ��� HashMap<String, List<Integer>>, ����� ������� �� ��� ���� (��������)*/
+        /*Åñòü äâå HashMap<String, List<Integer>>, íóæíî ñäåëàòü èç íèõ îäíó (ñìåðæèòü)*/
         Map<String, List<Integer>> mapFirst = new HashMap<>();
         List<Integer> listFirst = new ArrayList<>();
         listFirst.add(1);
@@ -23,6 +23,7 @@ public class Task3 {
         mapSecond.put("Second", listSecond);
         System.out.println(mapSecond);
 
+        // у тебя программа работает некорректно, попробуй во вторую мапу заменить "Second" -> "First" и посмотри результат
         Map<String, List<Integer>> mapThierd = new HashMap<>(mapFirst);
         for (int i = 0; i < mapSecond.size(); i++) {
             int finalI = i;
