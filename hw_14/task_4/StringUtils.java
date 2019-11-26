@@ -14,6 +14,8 @@ public class StringUtils {
     public String getPolindrom(String text) {
         String polindrom = " ";
         boolean state;
+        // у строки есть метод charAt и метод length() используй их.
+        // не стоит преобразовывать строку в лист чтобы проверять по буквам слово
         List<String> srtArray = new ArrayList<>();
         srtArray = Arrays.asList(text.split("\\s*(\\s|,|!|\\.)\\s*"));
         String temp = new String();
