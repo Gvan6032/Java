@@ -10,11 +10,11 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Task2 {
-    /*Есть текстовый файл. Нужно скопировать из него только те строки, которые содержат слово pancakes и записать их в другой файл*/
+    /*Г…Г±ГІГј ГІГҐГЄГ±ГІГ®ГўГ»Г© ГґГ Г©Г«. ГЌГіГ¦Г­Г® Г±ГЄГ®ГЇГЁГ°Г®ГўГ ГІГј ГЁГ§ Г­ГҐГЈГ® ГІГ®Г«ГјГЄГ® ГІГҐ Г±ГІГ°Г®ГЄГЁ, ГЄГ®ГІГ®Г°Г»ГҐ Г±Г®Г¤ГҐГ°Г¦Г ГІ Г±Г«Г®ГўГ® pancakes ГЁ Г§Г ГЇГЁГ±Г ГІГј ГЁГµ Гў Г¤Г°ГіГЈГ®Г© ГґГ Г©Г«*/
     public static void main(String[] args) throws IOException {
-        String text = "E://Java//Java_homework//Gvan6032//src//hw_14//task_2//Text.txt";
-        String regex = "pancakes";
-        String newText = "E://Java//Java_homework//Gvan6032//src//hw_14//task_2//TextNew.txt";
+        String text = "E://Java//Java_homework//Gvan6032//src//hw_14//task_2//Text.txt"; // РєРѕРЅСЃС‚Р°РЅС‚Р°
+        String regex = "pancakes"; // РєРѕРЅСЃС‚Р°РЅС‚Р°
+        String newText = "E://Java//Java_homework//Gvan6032//src//hw_14//task_2//TextNew.txt"; //РєРѕРЅСЃС‚Р°РЅС‚Р°
         Path path = Paths.get(text);
         Path pathNew = Paths.get(newText);
         searchForMatches(path, pathNew, regex);
@@ -25,7 +25,9 @@ public class Task2 {
         List<String> line = allFileText
                 .filter(l -> l.contains(regex))
                 .collect(Collectors.toList());
+        
         System.out.println(line);
+        
         try (FileOutputStream fos = new FileOutputStream(String.valueOf(pathNew))) {
             for (int i = 0; i < line.size(); i++) {
                 fos.write(line.get(i).getBytes());
