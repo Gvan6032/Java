@@ -7,9 +7,11 @@ public class Man {
     private Object surname;
     private Object phoneNumber;
 
+    // здесь нужно было использовать this() для вызова других конструкторов, например:
     public Man(String name, String phoneNumber) {
-        this.name = name;
-        this.phoneNumber = phoneNumber;
+        // this(name, null, phoneNumber);
+        this.name = name; // а эту строку стоит убрать
+        this.phoneNumber = phoneNumber; // а эту строку стоит убрать
     }
 
     public Man(String name, String surname, String phoneNumber) {
