@@ -27,6 +27,7 @@ public class Task5 {
     }
 
     // <cats> - это зачем?
+    // throws IOException, ClassNotFoundException - у тебя есть блок catch  с этим исключения, throws надо убрать
     public static <cats> void deserializableObject(String path) throws IOException, ClassNotFoundException {
         FileInputStream fis = new FileInputStream(path);
         ObjectInputStream ois = new ObjectInputStream(fis);
