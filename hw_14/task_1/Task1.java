@@ -4,16 +4,17 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) {
-        /*Есть приветственное предложение:
+        /*Г…Г±ГІГј ГЇГ°ГЁГўГҐГІГ±ГІГўГҐГ­Г­Г®ГҐ ГЇГ°ГҐГ¤Г«Г®Г¦ГҐГ­ГЁГҐ:
 "Hello, my name is Alex. I'm java developer and I'm glad to become a part of your company."
-Необходимо сделать так, чтобы можно было подставить любое имя и язык программирования.
-Напишите программу, которая бы позволяла вводить имя и язык программирования с консоли и затем выводила
-на экран полученное сообщение */
+ГЌГҐГ®ГЎГµГ®Г¤ГЁГ¬Г® Г±Г¤ГҐГ«Г ГІГј ГІГ ГЄ, Г·ГІГ®ГЎГ» Г¬Г®Г¦Г­Г® ГЎГ»Г«Г® ГЇГ®Г¤Г±ГІГ ГўГЁГІГј Г«ГѕГЎГ®ГҐ ГЁГ¬Гї ГЁ ГїГ§Г»ГЄ ГЇГ°Г®ГЈГ°Г Г¬Г¬ГЁГ°Г®ГўГ Г­ГЁГї.
+ГЌГ ГЇГЁГёГЁГІГҐ ГЇГ°Г®ГЈГ°Г Г¬Г¬Гі, ГЄГ®ГІГ®Г°Г Гї ГЎГ» ГЇГ®Г§ГўГ®Г«ГїГ«Г  ГўГўГ®Г¤ГЁГІГј ГЁГ¬Гї ГЁ ГїГ§Г»ГЄ ГЇГ°Г®ГЈГ°Г Г¬Г¬ГЁГ°Г®ГўГ Г­ГЁГї Г± ГЄГ®Г­Г±Г®Г«ГЁ ГЁ Г§Г ГІГҐГ¬ ГўГ»ГўГ®Г¤ГЁГ«Г 
+Г­Г  ГЅГЄГ°Г Г­ ГЇГ®Г«ГіГ·ГҐГ­Г­Г®ГҐ Г±Г®Г®ГЎГ№ГҐГ­ГЁГҐ */
         System.out.println("Hello! Please enter your name: ");
         Scanner in = new Scanner(System.in);
         String name = in.next();
         System.out.println("What programming language do you prefer? ");
         String language = in.next();
+        // РёСЃРїРѕР»СЊР·СѓР№ С€Р°Р±Р»РѕРЅ String.format() %s, %d
         System.out.println("Hello, my name is " + name + "." + " I'm " + language + " developer and I'm glad to became a part of your company.");
     }
 }
