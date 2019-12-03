@@ -1,5 +1,6 @@
 package hw_16.task_2;
 
+// предпочтительнее NumberThread implements Runnable
 public class NumberThread extends Thread {
     NumberThread(String name) {
         super(name);
