@@ -9,7 +9,7 @@ class NmberThread extends Thread {
 
     @Override
     public void run() {
-        int count = 10;
+        int count = 10; // лучше через конструктор
         for (int i = 0; i <= count; i++) {
             // String.format() получше бы смотрелся
             System.out.println("Thread: " + super.getName() + " " + "count " + i);
