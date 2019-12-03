@@ -2,8 +2,8 @@ package hw_16.task_3;
 
 public class Task3 {
     public static void main(String[] args) throws InterruptedException {
-        /*≈ÒÚ¸ Ï‡„‡ÁËÌ Ë„Û¯ÂÍ, ‚ ÍÓÚÓ˚È ÌÂÒÍÓÎ¸ÍÓ ÔÓÒÚ‡‚˘ËÍÓ‚ (ÔÓÚÓÍÓ‚) ‰ÓÒÚ‡‚Îˇ˛Ú ÚÓ‚‡. ¬‡Ï ÌÂÓ·ıÓ‰ËÏÓ ‰ÓÒÚ‡‚ËÚ¸ ‚ Ï‡„‡ÁËÌ Ë„Û¯ÍË
-(Ì‡ÔËÏÂ 100 ÓÚ Ó‰ÌÓ„Ó ÔÓÒÚ‡‚˘ËÍ‡ Ë 50 ÓÚ ‰Û„Ó„Ó Ë Á‡ÚÂÏ ‚˚‚ÂÒÚË Ì‡ ˝Í‡Ì ‚ÒÂ Ë„Û¯ÍË, ÍÓÚÓ˚Â ÒÂÈ˜‡Ò ‚ Ï‡„‡ÁËÌÂ*/
+        /*√Ö√±√≤√º √¨√†√£√†√ß√®√≠ √®√£√∞√≥√∏√•√™, √¢ √™√Æ√≤√Æ√∞√ª√© √≠√•√±√™√Æ√´√º√™√Æ √Ø√Æ√±√≤√†√¢√π√®√™√Æ√¢ (√Ø√Æ√≤√Æ√™√Æ√¢) √§√Æ√±√≤√†√¢√´√ø√æ√≤ √≤√Æ√¢√†√∞. √Ç√†√¨ √≠√•√Æ√°√µ√Æ√§√®√¨√Æ √§√Æ√±√≤√†√¢√®√≤√º √¢ √¨√†√£√†√ß√®√≠ √®√£√∞√≥√∏√™√®
+(√≠√†√Ø√∞√®√¨√•√∞ 100 √Æ√≤ √Æ√§√≠√Æ√£√Æ √Ø√Æ√±√≤√†√¢√π√®√™√† √® 50 √Æ√≤ √§√∞√≥√£√Æ√£√Æ √® √ß√†√≤√•√¨ √¢√ª√¢√•√±√≤√® √≠√† √Ω√™√∞√†√≠ √¢√±√• √®√£√∞√≥√∏√™√®, √™√Æ√≤√Æ√∞√ª√• √±√•√©√∑√†√± √¢ √¨√†√£√†√ß√®√≠√•*/
         ToysStore toysStore = new ToysStore();
         int iter = 100;
         Runnable runnableFirst = () -> {
@@ -18,11 +18,13 @@ public class Task3 {
             }
         };
 
+        // firstSuppliers -> firstSupplier
         Thread firstSuppliers = new Thread(runnableFirst);
+        // secondSuppliers -> secondSupplier
         Thread secondSuppliers = new Thread(runnableSecond);
 
         firstSuppliers.start();
-        ;
+        ; // —ç—Ç–æ –∑–∞—á–µ–º?
         secondSuppliers.start();
 
         firstSuppliers.join();
