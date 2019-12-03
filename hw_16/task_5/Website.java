@@ -6,6 +6,8 @@ public class Website {
     private String url;
     private WebsiteType type;
 
+    // ur1 -> url 
+    // https://ru.wikipedia.org/wiki/URL
     public Website(String ur1) {
         this(ur1, NEWS);
     }
