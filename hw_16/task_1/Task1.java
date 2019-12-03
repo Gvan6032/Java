@@ -2,8 +2,9 @@ package hw_16.task_1;
 
 public class Task1 {
     public static void main(String[] args) throws InterruptedException {
-        /*Создать класс, который в цикле выводит на экран числа от 0-10, запустить его в отдельном потоке*/
+        /*Г‘Г®Г§Г¤Г ГІГј ГЄГ«Г Г±Г±, ГЄГ®ГІГ®Г°Г»Г© Гў Г¶ГЁГЄГ«ГҐ ГўГ»ГўГ®Г¤ГЁГІ Г­Г  ГЅГЄГ°Г Г­ Г·ГЁГ±Г«Г  Г®ГІ 0-10, Г§Г ГЇГіГ±ГІГЁГІГј ГҐГЈГ® Гў Г®ГІГ¤ГҐГ«ГјГ­Г®Г¬ ГЇГ®ГІГ®ГЄГҐ*/
         NmberThread countThread = new NmberThread("MyThread");
         countThread.start();
+        // РЅРµ СЃС‚РѕРёС‚ Р·Р°Р±С‹РІР°С‚СЊ РїСЂРѕ РјРµС‚РѕРґ join()
     }
 }
